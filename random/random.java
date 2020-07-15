@@ -31,3 +31,9 @@ public class Main
         double dresult = rand.nextDouble();
     }
 }
+
+/* To run code:
+javac scopes/*.java
+jar cvfe scopes.jar scopes.Main scopes/*.class
+java -jar scopes.jar
+*/
