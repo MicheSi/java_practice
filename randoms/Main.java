@@ -31,3 +31,9 @@ public class Main {
         System.out.println(dresult);
     }
 }
+
+/* To run code:
+javac randoms/*.java
+jar cvfe randoms.jar randoms.Main randoms/*.class
+java -jar randoms.jar
+*/
