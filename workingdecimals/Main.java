@@ -1,5 +1,7 @@
 package workingdecimals;
 
+import java.math.BigDecimal;
+
 public class Main {
     //  create 2 doubles so we can do some arthmetic
     static double aWholeNumber = 3;
@@ -32,6 +34,25 @@ public class Main {
         System.out.println(aRealNumber + " / " + aWholeNumber + " = Round to cents " + answerDivRound);
         System.out.println(aRealNumber + " + " + aWholeNumber + " = Round to cents " + answerPlusRound);
         System.out.println(aRealNumber + " - " + aWholeNumber + " = Round to cents " + answerSubRound);
+
+        // BigDecimals
+        System.out.println();
+        System.out.println("*** Solution with Big Decimals ***");
+
+        // convert to BigDigDecimals
+        BigDecimal bigARealNumber = BigDecimal.valueOf(aRealNumber);
+        BigDecimal bigAWholeNumber = BigDecimal.valueOf(aWholeNumber);
+
+        // now we call the appropriate methods to perform operations on BigDecimals
+        BigDecimal bigAnswerMutl = bigARealNumber.multiply(bigAWholeNumber);
+        BigDecimal bigAnswerDiv = bigARealNumber.divide(bigAWholeNumber);
+        BigDecimal bigAnswerPlus = bigARealNumber.add(bigAWholeNumber);
+        BigDecimal bigAnswerSub = bigARealNumber.subtract(bigAWholeNumber);
+
+        System.out.println(bigARealNumber + " * " + bigAWholeNumber + " = " + bigAnswerMutl);
+        System.out.println(bigARealNumber + " / " + bigAWholeNumber + " = " + bigAnswerDiv);
+        System.out.println(bigARealNumber + " + " + bigAWholeNumber + " = " + bigAnswerPlus);
+        System.out.println(bigARealNumber + " - " + bigAWholeNumber + " = " + bigAnswerSub);
     }
 }
 
