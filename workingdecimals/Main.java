@@ -17,6 +17,21 @@ public class Main {
         System.out.println(aRealNumber + " / " + aWholeNumber + " = " + answerDiv);
         System.out.println(aRealNumber + " + " + aWholeNumber + " = " + answerPlus);
         System.out.println(aRealNumber + " - " + aWholeNumber + " = " + answerSub);
+
+        // Rouding numbers
+        System.out.println(); // this gives us a blank line
+        System.out.println("*** Solution with Rounding ***"); // some headers to help read the output
+        System.out.println("*** Must round each answer before using");
+
+        double answerDivRound = Math.round(answerDiv * 100.0) / 100.0;
+        double answerMultRound = Math.round(answerMult * 100.0) / 100.0;
+        double answerPlusRound = Math.round(answerPlus * 100.0) / 100.0;
+        double answerSubRound = Math.round(answerSub * 100.0) / 100.0;
+
+        System.out.println(aRealNumber + " * " + aWholeNumber + " = Round to cents " + answerMultRound);
+        System.out.println(aRealNumber + " / " + aWholeNumber + " = Round to cents " + answerDivRound);
+        System.out.println(aRealNumber + " + " + aWholeNumber + " = Round to cents " + answerPlusRound);
+        System.out.println(aRealNumber + " - " + aWholeNumber + " = Round to cents " + answerSubRound);
     }
 }
 
