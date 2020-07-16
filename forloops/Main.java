@@ -7,6 +7,14 @@ public class Main {
         for (int i = 0; i < 10; i++) {
             System.out.println(i);
         }
+
+        System.out.println();
+        System.out.println("*** change the index - Even Numbers between 1 and 10 n ***");
+
+        for (int i = 1; i <= 10; i++) { 
+            i++;
+            System.out.println(i);
+        }
     }
 }
 
