@@ -66,6 +66,28 @@ public class Main {
         for (int i = 0; i < cities.size(); i++) {
             System.out.println("Index: " + i + " Value: " + cities.get(i));
         }
+
+        System.out.println("\nSort in Alphabetical Order");
+        // Use the Collections.sort(ArrayList) method to sort the ArrayList in ascending order. This actually changes the order of the ArrayList.
+        Collections.sort(cities);
+        for (int i = 0; i < cities.size(); i++) {
+            System.out.println("Index: " + i + " Value: " + cities.get(i));
+        }
+
+        System.out.println("\nSort in Reverse Alphabetical Order");
+        // To sort in descending order, Use the Collections.sort(ArrayList,  Comparator.reverseOrder()) method
+        // This actually changes the order of the ArrayList.
+        Collections.sort(cities, Comparator.reverseOrder());
+        for (int i = 0; i < cities.size(); i++) {
+            System.out.println("Index: " + i + " Value: " + cities.get(i));
+        }
+
+        // To clear the ArrayList use clear()
+        // Java would automatically free up the memory allotted to the ArrayList when the ArrayList goes out of scope,
+        // so at the end of this method.
+        System.out.println("\nThe empty ArrayList");
+        cities.clear();
+        System.out.println(cities);
     }
 }
 
