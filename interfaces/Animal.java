@@ -1,6 +1,6 @@
 package interfaces;
 
-public class Animal {
+public interface Animal {
     void animalSound();
     void sleep();
 }

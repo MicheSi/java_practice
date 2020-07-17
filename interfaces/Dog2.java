@@ -1,6 +1,6 @@
 package interfaces;
 
-public class Dog implements Animal {
+public class Dog2 implements Animal {
     @Override public void animalSound() {
         System.out.println("Woof");
     }

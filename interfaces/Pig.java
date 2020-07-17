@@ -1,6 +1,6 @@
 package interfaces;
 
-class Pig implements Animal {
+public class Pig implements Animal {
     @Override public void animalSound() {
         System.out.println("Oink Oink");
     }
